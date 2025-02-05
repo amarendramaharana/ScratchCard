@@ -9,6 +9,6 @@ I built using Kotlin & Canvas API! This feature allows users to scratch off an o
 🔹 Kotlin + Canvas API
 🔹 Custom View with Gesture Handling
 
+Demo
 
-![Untitled design](https://github.com/user-attachments/assets/42e8dfac-1ee1-43e9-b6ff-8dde6609af8e)
-
+https://github.com/user-attachments/assets/4663955d-4e02-4f29-a863-76bcdfe3b056
