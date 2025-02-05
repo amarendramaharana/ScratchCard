@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/round"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/imageveiw"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/offer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="50% OFF"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.aptech.scratchview.ScratchView
+        android:id="@+id/scratchview"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="25dp"
+        android:background="@drawable/round"
+        android:hint="Enter discount percent"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnSet" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/black"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Set Offer"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/rewarded_ads_24px"
+
+        android:drawableTint="@color/black"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Scratch To"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reveal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/reveal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Reveal!"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
